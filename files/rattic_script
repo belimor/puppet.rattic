@@ -1,0 +1,10 @@
+#!/bin/bash
+
+function rattic_setup() {
+
+cd /opt/apps/RatticWeb/
+./manage.py syncdb --noinput && ./manage.py migrate --all && ./manage.py collectstatic -c --noinput && ./manage.py demosetup
+
+}
+
+rattic_setup
