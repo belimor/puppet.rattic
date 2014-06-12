@@ -18,6 +18,7 @@ apt-get update
 puppet resource package puppetmaster ensure=latest
 
 # add configuration to /etc/puppet.puppet.conf
+sed -i '/templatedir/d' /etc/puppet/puppet.conf
 puppet config set --section main server ${HOSTNAME}
 puppet config set --section main ordering manifest
 puppet config set --section agent pluginsync true 
