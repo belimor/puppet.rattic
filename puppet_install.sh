@@ -61,7 +61,7 @@ cat > /etc/puppet/modules/my_motd/files/${HOSTNAME}_motd <<EOF
 
 EOF
 
-cat > > /etc/puppet/modules/my_motd/files/motd <<EOF
+cat > /etc/puppet/modules/my_motd/files/motd <<EOF
 
     .
   .\|/.  Belimor
