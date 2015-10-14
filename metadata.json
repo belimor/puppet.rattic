@@ -1,0 +1,14 @@
+{
+  "name": "belimor-rattic",
+  "version": "0.1.0",
+  "author": "Dmitry Vaghin",
+  "summary": "Puppet module to install Rattic password manager",
+  "license": "Apache 2.0",
+  "source": "https://github.com/belimor/puppet.rattic",
+  "project_page": "https://github.com/belimor/puppet.rattic",
+  "issues_url": "https://github.com/belimor/puppet.rattic/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ]
+}
+
