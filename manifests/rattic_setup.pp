@@ -59,12 +59,12 @@ class rattic::rattic_setup {
     group   => 'root',
     mode    => '0700',
     source  => 'puppet:///modules/rattic/rattic_script',
-    require => File ['/opt/apps'],
+    require => File['/opt/apps'],
   }
 
   exec { "initial_setup":
     command => "/opt/apps/rattic.script",
-    require => File ['/opt/apps/RatticWeb/conf/local.cfg', '/opt/apps/rattic.script'],
+    require => File['/opt/apps/RatticWeb/conf/local.cfg', '/opt/apps/rattic.script'],
   }
 
 ### the end ###
