@@ -4,7 +4,7 @@ class rattic::mysql {
 #####################################################################################
 
 
-  file { '/root/.my.cnf'
+  file { '/root/.my.cnf':
     ensure => file,
     source => 'puppet:///modules/rattic/.my.cnf',
   }
