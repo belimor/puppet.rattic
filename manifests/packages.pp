@@ -22,7 +22,7 @@ class rattic::packages {
   package { 'South'                       : ensure => '0.8.4',    provider => 'pip', } ->
   package { 'django-auth-ldap'            : ensure => '1.1.8',    provider => 'pip', } ->
   package { 'django-database-files'       : ensure => '0.1',      provider => 'pip', } ->
-  package { 'django-otp'                  : ensure => '0.2.6',    provider => 'pip', } ->
+  package { 'django-otp'                  : ensure => '0.2.7',    provider => 'pip', } ->
   package { 'django-tastypie'             : ensure => '0.9.15',   provider => 'pip', } ->
   package { 'django-two-factor-auth'      : ensure => '0.5.0',    provider => 'pip', } ->
   package { 'django-user-sessions'        : ensure => '0.1.3',    provider => 'pip', } ->
@@ -40,5 +40,9 @@ class rattic::packages {
   package { 'boto'                        : ensure => '2.26.1',   provider => 'pip', } ->
   package { 'lxml'                        : ensure => '3.3.3',    provider => 'pip', } ->
   package { 'celery'                      : ensure => '3.1.11',   provider => 'pip', } ->
-  package { 'django-celery'               : ensure => '3.1.10',   provider => 'pip', }
+  package { 'django-celery'               : ensure => '3.1.10',   provider => 'pip', } ->
+  package { 'importlib'                   : ensure => 'latest',   provider => 'pip', } ->
+  package { 'django-social-auth'          : ensure => '0.7.9',    provider => 'pip', } ->
+  package { 'paramiko'                    : ensure => '1.15.2',   provider => 'pip', } ->
+  package { 'kombu'                       : ensure => '3.0.26',   provider => 'pip', }
 }

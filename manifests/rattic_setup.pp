@@ -14,7 +14,7 @@ class rattic::rattic_setup {
   }
 
   exec { 'wget' :
-    command => 'wget https://github.com/tildaslash/RatticWeb/archive/v${version}.tar.gz',
+    command => "wget https://github.com/tildaslash/RatticWeb/archive/v${version}.tar.gz",
     cwd     => '/opt/apps',
     creates => "/opt/apps/v${version}.tar.gz",
     path    => "/usr/bin/",
