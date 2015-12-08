@@ -1,5 +1,6 @@
 class rattic {
 
+
   class { 'rattic::apache'       : } ->
   class { 'rattic::packages'     : } ->
   class { 'rattic::mysql'        : } ->
